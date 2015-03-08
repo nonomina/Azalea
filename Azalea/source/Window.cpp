@@ -4,7 +4,6 @@
 //メインウインドウのクラス名
 #define AZALEA_DEFAULT_CLASSNAME		TEXT( "AZALEA123987AZALEA" )
 
-
 namespace Azalea
 {
 
