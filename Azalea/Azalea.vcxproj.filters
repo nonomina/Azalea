@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shader">
+      <UniqueIdentifier>{9e6a154b-d3b3-4f38-b8a8-13f13d26a704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{9a0107a4-c6c7-4092-8fab-203e143dceec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shader\ps.fx">
+      <Filter>shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shader\vs.fx">
+      <Filter>shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Window.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Graphics.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DDSTextureLoader.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\types.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Window.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Graphics.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Azalea.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DDSTextureLoader.h">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
