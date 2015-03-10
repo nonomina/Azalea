@@ -17,3 +17,4 @@ void SetTexutureFile(LPCWSTR texPath);
 int	ProcessMessage(void);
 
 }//namespace Azalea
+
