@@ -46,16 +46,16 @@
     <IntDir>$(ProjectDir)_intermediate\$(Configuration)</IntDir>
     <TargetName>$(ProjectName)_d</TargetName>
     <TargetExt>.lib</TargetExt>
-    <IncludePath>$(SolutionDir)DirectXTex\;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)DirectXTex\Bin\Desktop_2013\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)DirectXTK\Inc\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)DirectXTK\Bin\Desktop_2013\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProjectDir)result\</OutDir>
     <IntDir>$(ProjectDir)_intermediate\$(Configuration)</IntDir>
     <TargetExt>.lib</TargetExt>
-    <IncludePath>$(SolutionDir)DirectXTex\;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)DirectXTex\Bin\Desktop_2013\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)DirectXTK\Inc\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)DirectXTK\Bin\Desktop_2013\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -136,14 +136,12 @@ copy "$(ProjectDir)source\Azalea.h" "$(SolutionDir)Main\source\Azalea.h"
     </FxCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\DDSTextureLoader.cpp" />
     <ClCompile Include="source\Graphics.cpp" />
     <ClCompile Include="source\System.cpp" />
     <ClCompile Include="source\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\Azalea.h" />
-    <ClInclude Include="source\DDSTextureLoader.h" />
     <ClInclude Include="source\Graphics.h" />
     <ClInclude Include="source\types.h" />
     <ClInclude Include="source\Window.h" />

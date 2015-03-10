@@ -23,9 +23,6 @@
     <ClCompile Include="source\Graphics.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="source\DDSTextureLoader.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
     <ClCompile Include="source\System.cpp">
       <Filter>source</Filter>
     </ClCompile>
@@ -41,9 +38,6 @@
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="source\Azalea.h">
-      <Filter>source</Filter>
-    </ClInclude>
-    <ClInclude Include="source\DDSTextureLoader.h">
       <Filter>source</Filter>
     </ClInclude>
   </ItemGroup>

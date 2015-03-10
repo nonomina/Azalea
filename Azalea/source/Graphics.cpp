@@ -3,15 +3,16 @@
 #include "Window.h"//WinDataもここで取り込まれる
 #include <d3d11.h>
 #include <DirectXMath.h>
-#include "DDSTextureLoader.h"
+//#include "DDSTextureLoader.h"
+#include "WICTextureLoader.h"
 #include "..\\shader\\vs.h"
 #include "..\\shader\\ps.h"
 
 #pragma comment(lib, "d3d11.lib")
 #ifndef _DEBUG
-#    pragma comment(lib, "DirectXTex.lib")
+#    pragma comment(lib, "DirectXTK.lib")
 #else
-#    pragma comment(lib, "DirectXTex_d.lib")
+#    pragma comment(lib, "DirectXTK_d.lib")
 #endif
 
 #define SAFE_RELEASE(p) { if(p) { (p)->Release(); (p)=NULL; } }
@@ -30,8 +31,9 @@ void SetTexutureFile(LPCWSTR texPath)
 	HWND hWnd = WinData.MainWindow;
 
 	//テクスチャ読み込み
-	if (FAILED(DirectX::CreateDDSTextureFromFile(GRH.hpDevice, texPath, NULL, &GRH.hpShaderResourceView))) {
-		MessageBox(hWnd, _T("CreateDDSTextureFromFile"), _T("Err"), MB_ICONSTOP);
+	//if (FAILED(DirectX::CreateDDSTextureFromFile(GRH.hpDevice, texPath, NULL, &GRH.hpShaderResourceView))) {
+    if (FAILED(DirectX::CreateWICTextureFromFile(GRH.hpDevice, texPath, NULL, &GRH.hpShaderResourceView))) {
+			MessageBox(hWnd, _T("CreateDDSTextureFromFile"), _T("Err"), MB_ICONSTOP);
 		TerminateDirectX();
 	}
 

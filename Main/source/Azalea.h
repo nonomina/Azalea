@@ -1,6 +1,9 @@
 #pragma once
 
-#include "types.h"
+#pragma once
+
+#include <tchar.h>
+#include <Windows.h>
 
 /// ライブラリ関数の宣言を示す。ユーザ側はここで提供される関数を使う。
 namespace Azalea{
